@@ -1,0 +1,75 @@
+const styles = {
+  divTelaFull: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: "100%",
+    width: "100%",
+    backgroundColor: "black",
+  },
+  divSup : {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "5px",
+    height: "13%",
+    width: "100%",
+    border: "1px solid aqua",
+  },
+    rotulo : {
+      fontSize: "18px",
+      fontWeight: "bold",
+      color: "white",
+    },
+  divBtts : {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "17%",
+    width: "100%",
+    border: "1px solid aqua",
+  },
+    btts : {
+      height: "100%",
+      width: "30%",
+      borderWidhtRight: "1px",
+      borderStyle: "solid",
+      borderColor: "aqua",
+      fontSize: "18px",
+      fontWeight: "bold",
+      color: "white",
+    },
+    divPlc : {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-around",
+      alignItems: "center",
+      height: "100%",
+      width: "40%",
+    },
+      txtPlc : {
+        fontSize: "24px",
+        fontWeight: "bold",
+        color: "white",
+      },
+    divRot : {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "13%",
+      width: "100%"
+    },
+      cel:{
+        height: "100%",
+        width: "10%",
+        textAlign: "center",
+        fontSize: "19px",
+        fontWeight: "bold",
+        color: "white",
+        border: "1px solid aqua",
+      }
+
+} ; export default styles;

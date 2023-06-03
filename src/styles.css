@@ -1,0 +1,538 @@
+*{
+  box-sizing  : border-box;
+  padding     : 0;
+  margin      : 0;
+}
+/* Componentes */
+/* TelaFull */
+  .telaFull {
+    height            : 100%;
+    width             : 100%;
+    justify-content   : flex-start;
+    align-items       : center;
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    background-color  : black;
+  }
+  .telaFM {
+    height            : 100%;
+    width             : 100%;
+    justify-content   : center;
+    align-items       : center;
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    background-color  : black;
+}
+/* TopoCmp */
+  .containTopoCmp {
+    flex-direction    : row;
+    display           : flex;
+    justify-content   : space-around;
+    align-items       : center;
+    width             : 100%;
+    height            : 25%;
+    background-color  : #FAB03D;
+  }
+  .containTopoCmp > img{
+    height          : 150px;
+    width           : 150px;
+  }
+  .containTopoCmp > h1{
+    height          : 80%;
+    width           : 75%;
+    margin-top      : 5%;
+    font-size       : 40px;
+    color           : black;
+    font-weight     : bold;
+  }
+
+  /* TopoCmp */
+  .containTpCampMobile {
+    flex-direction    : row;
+    display           : flex;
+    justify-content   : space-around;
+    align-items       : center;
+    width             : 100%;
+    height            : 25%;
+  }
+  .containTpCampMobile > img{
+    height          : 100px;
+    width           : 100px;
+    border-color    : aqua;
+    border-width    : 2px;
+    border-style    : solid;
+    border-radius   : 90px;
+  }
+  .containTpCampMobile > div{
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    height          : 95%;
+    width           : 65%;
+    color           : black;
+    font-weight     : bold;
+  }
+  .containTpCampMobile > div > h1{
+    height          : auto;
+    width           : 100%;
+    margin-top      : 1%;
+    font-size       : 18px;
+    color           : white;
+    font-weight     : bold;
+  }
+
+  .barraMob{
+    height          : 2px;
+    width           : 100%;
+    background-color: #FAB03D;
+  }
+/*Button 3 tipos 
+  whidth: 90%;  -> btt1
+  whidth: 60%;  -> btt2
+  border: 90px; -> btt3
+*/
+.btt1{
+  height            : 10%;
+  width             : 90%;
+  margin            : 2% 0 0 2%;
+  background-color  : #076CC9;
+  border            : 2px solid aqua;
+  border-radius     : 10px;
+  font-size         : 20px;
+  font-weight       : bold;
+  color             : whitesmoke;
+  cursor            : pointer;
+}
+.btt2{
+  height            : 10%;
+  width             : 60%;
+  margin            : 2% 0 0 2%;
+  background-color  : #076CC9;
+  border            : 2px solid aqua;
+  border-radius     : 10px;
+  font-size         : 20px;
+  font-weight       : bold;
+  color             : whitesmoke;
+  cursor            : pointer;
+}
+.btt3{
+  height            : 50%;
+  width             : 5%;
+  margin            : 2%;
+  background-color  : #076CC9;
+  border            : 2px solid aqua;
+  border-radius     : 90px;
+  font-size         : 20px;
+  font-weight       : bold;
+  color             : whitesmoke;
+  cursor            : pointer;
+}
+.bttMob{
+  height            : 95%;
+  width             : 30%;
+  margin            : 2% 0 0 2%;
+  background-color  : #076CC9;
+  border            : 2px solid aqua;
+  border-radius     : 15px;
+  font-size         : 20px;
+  font-weight       : bold;
+  color             : whitesmoke;
+  cursor            : pointer;
+}
+
+/* Imagem */
+.imgCmpLogo{
+  height: 90%;
+  width: 90%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 120px;
+}
+.imgCmp{
+  height: auto;
+  width: 90%;
+  border-width: 2px;
+  border-color: aqua;
+  border-style: solid;
+  border-radius: 12px;
+}
+.imgFundo{
+  height: auto;
+  width: 98%;
+}
+
+/* Inputs */
+.inputsForm{
+  height: 10%;
+  width: 90%;
+  margin: 2% 0 0 2%;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.inputsLin{
+  height: 100%;
+  width: 45%;
+  margin: 2% 0 0 2%;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.inputsArea{
+  height: 30%;
+  width: 90%;
+  margin: 2% 0 0 2%;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Componente campeonato*/
+/*CmpCamp da Home!*/
+.cmpCamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpCamp > img{
+  height: 70%;
+  width: 24%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 120px;
+}
+.cmpCamp > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: auto;
+  width: 74%;
+}
+.cmpCamp > div > h1{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.cmpCamp > div > h2{
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/*Componente Jgdr para tela inicial*/
+.cmpJgdr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpJgdr > img{
+  height: 70%;
+  width: 24%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 120px;
+}
+.cmpJgdr > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: auto;
+  width: 74%;
+}
+.cmpJgdr > div > h1{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.cmpJgdr > div > h2{
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+/*Componente jogador mobile*/
+.cmpJgdrMob{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpJgdrMob > img{
+  height: 80px;
+  width: 80px;
+  margin: 2%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 120px;
+}
+.cmpJgdrMob > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: auto;
+  width: 65%;
+}
+.cmpJgdrMob > div > h2{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+.cmpJgdrMob > div > h3{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: white;
+}
+
+/*Componente time MainCamp*/
+.cmpTime{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpTime > h1{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.cmpTime > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+}
+/* Componente Time Mobile*/
+.cmpTimeMob{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpTimeMob > h1{
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  color: white;
+}
+
+.cmpTimeMob > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0 7px 0;
+  height: 100px;
+  width: 100%;
+}
+/* Componente Jogo */
+.cmpJogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  width: 95%;
+  margin: 2%;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+
+.cmpJogo > h1{
+  height: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.cmpJogo > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.cmpJogo > div > h2{
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+/* Componente Jogo Mobile*/
+.cmpJogoMob{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 95%;
+  margin: 3% 0 0 0;
+  background-color: #2F4F4F;
+  border-radius: 20px;
+}
+.cmpJogoMob > h1{
+  height: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.cmpJogoMob > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+.cmpJogoMob > div > h2{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+/* Componente TopoLdJg */
+.cmpTopoLdJg{
+  flex-direction    : row;
+  display           : flex;
+  justify-content   : space-between;
+  align-items       : center;
+  width             : 100%;
+  height            : 30%;
+  background-color  : #FAB03D;
+}
+
+.cmpTopoLdJg > img{
+  height          : 200px;
+  width           : 200px;
+}
+.cmpTopoLdJg > div{
+  display: flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  align-items     : center;
+  height          : 100%;
+  width           : 85%;
+}
+.cmpTopoLdJg > div > h1{
+  font-size       : 40px;
+  font-weight     : bold;
+  color           : black;
+}
+
+/*Componente User do Load Game*/
+
+.cmpUserLG{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 95%;
+  border-radius: 20px;
+}
+.cmpUserLG > img{
+  
+  height: 100px;
+  width: 100px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 120px;
+}
+.cmpUserLG > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  height: auto;
+  width: 28%;
+}
+.cmpUserLG > h1{
+  width: 10%;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+/*Componente User Topo Mob*/
+.cmpUserTpMob{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  width: 98%;
+}
+.cmpUserTpMob > img{
+  height: 80%;
+  width: 30%;
+  border-width: 2px;
+  border-color: aqua;
+  border-style: solid;
+  border-radius: 120px;
+}
+.cmpUserTpMob > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  width: 65%;
+}
+.cmpUserTpMob > div > h1{
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
